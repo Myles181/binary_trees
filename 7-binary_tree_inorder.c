@@ -2,6 +2,7 @@
 
 /**
  * binary_tree_inorder - Inorder Traversal
+ * @tree: Root pointer
  * @func: Pointer to function (i.e printf function)
  * Return: nothing
  */
