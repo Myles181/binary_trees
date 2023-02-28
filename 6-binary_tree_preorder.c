@@ -3,7 +3,7 @@
 /**
  * binary_tree_preorder - Preorder Traversal
  * @tree: pointer to the node
- * @func: 
+ * @func: Pointer to function
  * Return: nothing
  */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
