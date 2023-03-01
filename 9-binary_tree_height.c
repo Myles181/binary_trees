@@ -7,28 +7,28 @@
  */
 size_t binary_tree_height(const binary_tree_t *tree)
 {
-	size_t height = 0;
+	size_t left = 0, right = 0, height;
 
 	if (!tree)
 		return (0);
 
-	if (tree->left != NULL)
+	/* Check if tree->left is not empty*/
+	if (tree->left)
 	{
-		binary_tree_height(tree->left);
-		height += 1;
+		/* Count number of edges at left */
+		left = 1 + binary_tree_height(tree->left);
 	}
-	else
-	{
-		height = 0;
-	}
+	/*Check if tree->right is not empty*/
 	if (tree->right)
 	{
-		binary_tree_height(tree->right);
-		height += 1;
+		/*Count number of edges at right*/
+		right = 1 + binary_tree_height(tree->right);
 	}
+	/*Select the maximum height of each side*/
+	if (left > right)
+		height = left;
 	else
-	{
-		height = 0;
-	}
-	return (height);
+		height = right;
+
+	return height;
 }
