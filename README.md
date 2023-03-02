@@ -2,7 +2,7 @@
 
 ## Authors
 * Myles2005
-* Arimonte
+*cyrile450@gmail.com
 
 ## Description
 This Repo is about understanding Binary Tree Data Structure
